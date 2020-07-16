@@ -152,7 +152,7 @@ namespace Users
             newUser.Location = Console.ReadLine();
             Console.Write("email :");
             newUser.Email = Console.ReadLine();
-            users = ur.AddUser(newUser);
+            users = urWL.AddUser(newUser);
             Console.WriteLine("Id \t Name        \t Address \t Email \t Location \t isActive");
             foreach (User user in users)
             {

@@ -51,29 +51,6 @@ namespace Users
             return users;
         }
 
-        List<User> IUserRepository.Users()
-        {
-            throw new NotImplementedException();
-        }
-
-        User IUserRepository.GetUser(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        List<User> IUserRepository.DeleteUser(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        List<User> IUserRepository.ActiveUsers()
-        {
-            throw new NotImplementedException();
-        }
-
-        List<User> IUserRepository.AddUser(User user)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

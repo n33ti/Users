@@ -25,7 +25,7 @@ namespace Users
                
             }
             Console.WriteLine("------------With Linq-----------");
-            UserRepository ur = new UserRepository();
+            IUserRepository ur = new UserRepository();
             List<User> users = ur.Users();
             Console.WriteLine("Id \t Name        \t Address \t Email \t Location \t isActive");
             if (users.Count > 0)
@@ -94,7 +94,7 @@ namespace Users
             }
 
             Console.WriteLine("------------Without Linq-----------");
-            UserRepositoryWithoutLinq urWL = new UserRepositoryWithoutLinq();
+            IUserRepository urWL = new UserRepositoryWithoutLinq();
             users = urWL.Users();
             Console.WriteLine("Id \t Name        \t Address \t Email \t Location \t isActive");
             foreach (User user in users)
